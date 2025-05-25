@@ -1,4 +1,4 @@
-#N canvas 861 36 837 1000 12;
+#N canvas 1542 36 498 1000 12;
 #X obj 111 310 inlet~;
 #X obj 294 310 inlet~;
 #X obj 332 163 inlet;
@@ -17,6 +17,8 @@
 #X obj 94 261 expr if($f1<=0 \, 1 \, 1-$f1);
 #X obj 277 261 expr if($f1>=0 \, 1 \, 1+$f1);
 #X text 31 12 [pan~] - linear panning., f 78;
+#X obj 268 163 loadbang;
+#X msg 268 188 0;
 #X connect 0 0 6 1;
 #X connect 1 0 7 1;
 #X connect 2 0 13 0;
@@ -29,3 +31,5 @@
 #X connect 13 0 3 0;
 #X connect 15 0 5 0;
 #X connect 16 0 4 0;
+#X connect 18 0 19 0;
+#X connect 19 0 3 0;
